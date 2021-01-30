@@ -1,11 +1,63 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=wrap&subset=cyrillic-ext");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap&subset=cyrillic-ext");
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-LightItalic.woff2') format('woff2'),
+        url('../fonts/Gilroy-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('../fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AC Line';
+    src: url('../fonts/ACLine.woff2') format('woff2'),
+        url('../fonts/ACLine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FK Aladdin';
+    src: url('../fonts/FKAladdin.woff2') format('woff2'),
+        url('../fonts/FKAladdin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+	
 *,
 *::before,
-*::after{
+*::after {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
-li{
+li {
 	list-style: none;
 }
 a,
@@ -15,83 +67,106 @@ a:visited {
 a:hover {
 	text-decoration: none;
 }
-h1
-h2
-h3
-h4
-h5
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-	font-variant: inherit;
+	font-weight: inherit;
 	font-size: inherit;
 }
 img {
 	vertical-align: top;
 }
 
-span {
-	color: aqua;
-}
-.yellow span {
-	color: yellow;
-}
-.yellow.brown {
-	color: brown;
-}
-h2 {
-	color: tomato;
-}
-#title {
-	color: slateblue;
-}
-h3 {
-	color: slategray;
-}
-.small_list {
-	color: springgreen;
-}
-p {
-	color: teal;
-}
-.content {
-	color: sienna;
-}
-#green {
-	color: green;
-}
-.info{
-	color:cornflowerblue;
-}
-.small_list_2 {
-	color: burlywood;
-}
-.small_list_2 span {
-	color: cadetblue;
-}
-.small_list_3 {
-	color: darkblue;
-}
-.small_list_3-1 {
-	color: darkgray;
-}
-.blak {
-	color: black;
-}
-h5 {
-	color: darkcyan;
-}
-#title_3-2-1 {
-	color: magenta;
-}
-#title_3-3-1 {
-	color: beige;
+body {
+	font-family: 'lora';
+	color: gray;
 }
 
-.nav > span {
-	color: crimson;
+.header {
 }
-.text__item + li {
-	color:violet;
+.title {
+	font-size: 52px;
+	color: rgba(250, 1, 1, 0.493);
+	text-shadow: 1px 7px 15px rgba(14, 96, 189, 0.603);
+	line-height: 200%;    /* Интервал между словами */
+	font-weight: 700;     /* Насыщенность */
+	
+}
+.subtitle span {
+	text-decoration: line-through;
+}
+.main .subtitle {
+	color: blue;
+	font-size: 20px;
+	line-height:  150%;
+}
+.main .underline {
+	text-decoration: underline;   /* Добовляем к тексту подчеркивание снизу, сверху и перечеркнутый текст */
+	font-style: italic;
+}
+.main .date {
+	color: chartreuse;
 }
 h4 {
-	color: darkorange;
+	font-size: 20px;   /* Размер текса */
+	color: mediumslateblue;
+	text-align: center;     /* Устанавливаем место размещения по горизонтали */ 
+	text-shadow: 1px -5px 10px rgb(13, 85, 240);
+}
+h3 {
+	font-size: 17px;
+	color: brown;
+	line-height: 200%;   
+}
+.paragraph {
+	line-height: 140%;      /* Устанавливаем межстрочный интервал текста(лучше в %) */ 
+	color: rgb(255, 86, 34);
+	text-shadow: 1px 8px 2px rgba(255, 86, 34, 0.548);   /* Создаем тень тексту */
+	font-weight: 900;       /* Утанавливает толщину текста */
+	font-family: 'lato';
+	
+}
+.paragraph_1 span {
+	color: rgb(92, 0, 0);    /* Цвет текста */
+	font-style: oblique;    /* Устанавливает начертание текса */
+	
+}
+.gilroy {
+	font-family: 'gilroy';  
+	font-style: italic;  /* Устанавливает начертание текста */
+}
+.paragraph_3 h4 {
+	text-align: right;
+}
+.paragraph_3 span {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: overline;
+	color: rgb(179, 197, 13);
+	text-shadow: 3px 1px 10px rgba(6, 44, 212, 0.795);
+}
+
+
+.line{
+	font-family: Arial, Helvetica, sans-serif;
+	color: seagreen;
+	font-weight: 900;
+	white-space: nowrap;
+}
+.paragraph_4 span {
+	letter-spacing: 10px;    /* Устанавливает отступ между символами */
+}
+.paragraph_4_1 {
+	color: rgb(13, 85, 240);
+	word-spacing: 30px;   /*  Устанавливает отступ между словами */
+	text-shadow: -3px 1px 1px rgba(0, 0, 0, 0.514);
+}
+.paragraph_4_2 {
+	color: black;
+	text-indent: 50px; 
+	line-height: 40px;
+	font-weight: 700;    /* Устанавливает насыщеность  */
+	text-shadow: 1px 3px 10px rgba(255, 0, 0, 0.61);
 }
